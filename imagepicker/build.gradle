@@ -40,17 +40,6 @@ dependencies {
 
 }
 
-//apply from: '../bintray.gradle'
-//
-//publish {
-//    userOrg = 'moonljt521'//bintray.com用户名
-//    groupId = 'com.moonljt521.imagepicker'//jcenter上的路径,包名
-//    artifactId = 'imagepicker'//项目名称
-//    publishVersion = '1.0.0'//版本号
-//    desc = '项目描述信息'//描述，不重要
-//    website = 'https://github.com/moonljt521'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-//}
-
 ext {
     bintrayRepo = 'imagepicker' // 仓库名称
     bintrayName = 'imagepicker' // 项目名称

@@ -83,7 +83,7 @@ public class ImagePickerActivity extends AppCompatActivity implements SeekBar.On
         rb_crop_square = (RadioButton) findViewById(R.id.rb_crop_square);
         rb_crop_circle = (RadioButton) findViewById(R.id.rb_crop_circle);
         rb_glide.setChecked(true);
-        rb_muti_select.setChecked(true);
+        rb_single_select.setChecked(true);
         rb_crop_square.setChecked(true);
 
         et_crop_width = (EditText) findViewById(R.id.et_crop_width);
@@ -101,7 +101,7 @@ public class ImagePickerActivity extends AppCompatActivity implements SeekBar.On
         SeekBar sb_select_limit = (SeekBar) findViewById(R.id.sb_select_limit);
         sb_select_limit.setMax(15);
         sb_select_limit.setOnSeekBarChangeListener(this);
-        sb_select_limit.setProgress(9);
+        sb_select_limit.setProgress(1);
 
         CheckBox cb_show_camera = (CheckBox) findViewById(R.id.cb_show_camera);
         cb_show_camera.setOnCheckedChangeListener(this);

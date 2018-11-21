@@ -7,13 +7,14 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        google()
 
         maven {
             url 'https://dl.bintray.com/moonljt521/imagepicker/'
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.1.2'
 
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
@@ -39,6 +40,8 @@ allprojects {
         maven {
             url 'https://dl.bintray.com/moonljt521/imagepicker/'
         }
+        google()
+
     }
 }
 

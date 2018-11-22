@@ -51,7 +51,7 @@ ext {
     siteUrl = 'https://github.com/moonljt521/ImagePicker'
     gitUrl = 'git@github.com:moonljt521/ImagePicker.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.3'
 
     developerId = 'moonljt521'
     developerName = 'moonljt521'

@@ -41,10 +41,18 @@ public class DataHolder {
         }
     }
 
-    public Object retrieve(String id) {
+    public Object getObj(String id) {
         if (data == null || mInstance == null){
             throw new RuntimeException("你必须先初始化");
         }
         return data.get(id);
     }
+
+    public Object removeObj(String id) {
+        if (data == null || mInstance == null){
+            throw new RuntimeException("你必须先初始化");
+        }
+        return data.remove(id);
+    }
+
 }

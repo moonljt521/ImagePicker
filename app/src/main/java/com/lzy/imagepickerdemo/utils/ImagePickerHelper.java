@@ -1,20 +1,20 @@
 package com.lzy.imagepickerdemo.utils;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.ui.ImageGridActivity;
 import com.lzy.imagepicker.view.CropImageView;
 import com.lzy.imagepickerdemo.imageloader.GlideImageLoader;
 
-import java.util.List;
 
 /**
  * author: jiangtao.liang
  * date:   On 2018/11/9 11:19
  */
+@Deprecated
 public class ImagePickerHelper {
 
     private ImagePickerHelper() {
@@ -35,6 +35,7 @@ public class ImagePickerHelper {
         imagePicker.setShowCamera(false);  //显示拍照按钮
         imagePicker.setCrop(false);        //允许裁剪（单选才有效）
         imagePicker.setSaveRectangle(true); //是否按矩形区域保存
+        imagePicker.setMultiMode(false);
         imagePicker.setSelectLimit(1);    //选中数量限制
         imagePicker.setStyle(CropImageView.Style.RECTANGLE);  //裁剪框的形状
         imagePicker.setFocusWidth(800);   //裁剪框的宽度。单位像素（圆形自动取宽高最小值）

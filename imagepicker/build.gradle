@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 100
-        versionName "1.0"
+        versionCode 102
+        versionName "1.0.3"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -29,6 +29,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.0'
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'com.android.support:support-v4:27.1.0'
@@ -38,28 +39,30 @@ dependencies {
 
 }
 
-ext {
-    bintrayRepo = 'imagepicker' // 仓库名称
-    bintrayName = 'imagepicker' // 项目名称
+//ext {
+//    bintrayRepo = 'imagepicker' // 仓库名称
+//    bintrayName = 'imagepicker' // 项目名称
+//
+//    publishedGroupId = 'com.moonljt521.imagepicker'  // 自定义gradle引用的包名
+//    libraryName = 'imagepicker'  // gradle 引用项目名称
+//    artifact = 'imagepicker'
+//
+//    libraryDescription = 'A pickerView on Android 4 target 26'
+//
+//    siteUrl = 'https://github.com/moonljt521/ImagePicker'
+//    gitUrl = 'git@github.com:moonljt521/ImagePicker.git'
+//
+//    libraryVersion = '1.0.3'
+//
+//    developerId = 'moonljt521'
+//    developerName = 'moonljt521'
+//    developerEmail = '446741151@qq.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 
-    publishedGroupId = 'com.moonljt521.imagepicker'  // 自定义gradle引用的包名
-    libraryName = 'imagepicker'  // gradle 引用项目名称
-    artifact = 'imagepicker'
-
-    libraryDescription = 'A pickerView on Android 4 target 26'
-
-    siteUrl = 'https://github.com/moonljt521/ImagePicker'
-    gitUrl = 'git@github.com:moonljt521/ImagePicker.git'
-
-    libraryVersion = '1.0.3'
-
-    developerId = 'moonljt521'
-    developerName = 'moonljt521'
-    developerEmail = '446741151@qq.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'bintrayUpload.gradle'

@@ -4,14 +4,14 @@ apply plugin: 'com.android.library'
 //apply plugin: 'android-aspectjx'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 //    buildToolsVersion "27.1.0"
 
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 102
-        versionName "1.0.3"
+        versionCode 105
+        versionName "1.0.5"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -34,7 +34,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'com.android.support:support-v4:27.1.0'
     implementation('com.github.chrisbanes.photoview:library:1.2.4'){
-        exclude module:'support'
+        exclude module:'com.android.support'
     }
 
 }

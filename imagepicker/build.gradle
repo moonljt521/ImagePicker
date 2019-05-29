@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 106
-        versionName "1.0.6"
+        versionCode 110
+        versionName "1.1.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -33,7 +33,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.0'
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'com.android.support:support-v4:27.1.0'
-    implementation('com.github.chrisbanes.photoview:library:1.2.4'){
+    api('com.github.chrisbanes.photoview:library:1.2.4'){
         exclude module:'support-v4'
     }
 

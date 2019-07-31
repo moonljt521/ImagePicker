@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.moonljt521.imagepicker:imagepicker:1.0.2'
+    compile 'com.moonljt521.imagepicker:imagepicker:1.1.3'
 }
 ```
 

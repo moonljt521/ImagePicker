@@ -1,0 +1,2 @@
+gradle install
+gradle bintrayUpload

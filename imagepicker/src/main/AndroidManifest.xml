@@ -17,21 +17,49 @@
         <activity
             android:name=".ui.ImageGridActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/ImagePickerTheme"/>
+            android:theme="@style/ImagePickerTheme">
+
+            <intent-filter >
+                <action android:name="com.moon.imagepicker.ImageGridActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".ui.ImageCropActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="false"
-            android:theme="@style/ImagePickerTheme"/>
+            android:theme="@style/ImagePickerTheme">
+
+            <intent-filter >
+                <action android:name="com.moon.imagepicker.ImageCropActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ui.ImagePreviewActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/ImagePickerThemeFullScreen"/>
+            android:theme="@style/ImagePickerThemeFullScreen">
+
+            <intent-filter >
+                <action android:name="com.moon.imagepicker.ImagePreviewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
 
         <activity
             android:name=".ui.ImagePreviewDelActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/ImagePickerThemeFullScreen"/>
+            android:theme="@style/ImagePickerThemeFullScreen">
+
+            <intent-filter >
+                <action android:name="com.moon.imagepicker.ImagePreviewDelActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
 
         <provider
             android:name=".ImagePickerProvider"

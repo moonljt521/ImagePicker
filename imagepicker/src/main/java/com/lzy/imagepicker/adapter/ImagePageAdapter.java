@@ -35,6 +35,7 @@ public class ImagePageAdapter extends PagerAdapter {
 
     public ImagePageAdapter(Activity activity, ArrayList<ImageItem> images) {
         this.mActivity = activity;
+        if (images == null) images = new ArrayList<>();
         this.images = images;
 
         DisplayMetrics dm = Utils.getScreenPix(activity);
@@ -44,6 +45,7 @@ public class ImagePageAdapter extends PagerAdapter {
     }
 
     public void setData(ArrayList<ImageItem> images) {
+        if (images == null) images = new ArrayList<>();
         this.images = images;
     }
 
@@ -68,7 +70,7 @@ public class ImagePageAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return images.size();
+        return images == null ? 0 : images.size();
     }
 
     @Override

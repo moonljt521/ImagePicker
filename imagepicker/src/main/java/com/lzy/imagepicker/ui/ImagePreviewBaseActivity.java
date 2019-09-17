@@ -54,6 +54,10 @@ public abstract class ImagePreviewBaseActivity extends ImageBaseActivity {
             mImageItems = (ArrayList<ImageItem>) DataHolder.getInstance().removeObj(DataHolder.DH_CURRENT_IMAGE_FOLDER_ITEMS);
         }
 
+        if (mImageItems == null){
+            mImageItems = new ArrayList<>();
+        }
+
         imagePicker = ImagePicker.getInstance();
         selectedImages = imagePicker.getSelectedImages();
 
